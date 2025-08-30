@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ps_spec marker="PDN" version="PSPDN180101">
+    <document description="">
+        <metadata>
+            <section marker="HDR" mandatory="true" description="">
+                <fields>
+                    <field name="H1" position="1" mandatory="true" description="">
+                        <validator type="string" length="10" condition="ltoreq"/>
+                    </field>
+                    <field name="H2" position="2" mandatory="false" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="H3" position="3" mandatory="false" description="">
+                        <validator type="string" length="10" condition="ltoreq"/>
+                    </field>
+                    <field name="H4" position="4" mandatory="false" description="">
+                        <validator type="string" length="250" condition="ltoreq"/>
+                    </field>
+                </fields>
+            </section>
+            <section marker="SRC" mandatory="true" description="">
+                <fields>
+                    <field name="S1" position="1" mandatory="true" description="">
+                        <validator type="string" length="1" condition="fixed"/>
+                    </field>
+                    <field name="S2" position="2" mandatory="true" description="">
+                        <validator type="string" length="8" condition="ltoreq"/>
+                    </field>
+                    <field name="S3" position="3" mandatory="true" description="">
+                        <validator type="string" length="2000" condition="ltoreq"/>
+                    </field>
+                </fields>
+            </section>
+            <section marker="DST" mandatory="true" description="">
+                <fields>
+                    <field name="D1" position="1" mandatory="true" description="">
+                        <validator type="string" length="4" condition="fixed"/>
+                    </field>
+                    <field name="D2" position="2" mandatory="true" description="">
+                        <validator type="string" length="2000" condition="ltoreq"/>
+                    </field>
+                </fields>
+            </section>
+            <section marker="CLASS" mandatory="false" description="">
+                <fields>
+                    <field name="C1" position="1" mandatory="true" description="">
+                        <validator type="string" length="1" condition="fixed"/>
+                    </field>
+                    <field name="C2" position="2" mandatory="false" description="">
+                        <validator type="string" length="150" condition="ltoreq"/>
+                    </field>
+                </fields>
+            </section>
+        </metadata>
+        <data mandatory="true" description="">
+            <header>
+                <fields>
+                    <field name="HD1" position="1" mandatory="false" description="">
+                        <validator type="guid" length="36" condition="fixed"/>
+                    </field>
+                    <field name="HD2" position="2" mandatory="true" description="">
+                        <validator type="string" length="15" condition="ltoreq"/>
+                    </field>
+                    <field name="HD3" position="3" mandatory="true" description="">
+                        <validator type="date" length="10" condition="fixed"/>
+                    </field>
+                    <field name="HD4" position="4" mandatory="false" description="">
+                        <validator type="string" length="2000" condition="ltoreq"/>
+                    </field>
+                    <field name="HD5" position="5" mandatory="false" description="">
+                        <validator type="string" length="8" condition="ltoreq"/>
+                    </field>
+                    <field name="HD6" position="6" mandatory="false" description="">
+                        <validator type="string" length="11" condition="fixed"/>
+                    </field>
+                    <field name="HD7" position="7" mandatory="false" description="">
+                        <validator type="string" length="2000" condition="ltoreq"/>
+                    </field>
+                    <field name="HD8" position="8" mandatory="false" description="">
+                        <validator type="string" length="3" condition="fixed"/>
+                    </field>
+                    <field name="HD9" position="9" mandatory="true" description="">
+                        <validator type="string" length="512" condition="ltoreq"/>
+                    </field>
+                    <field name="HD10" position="10" mandatory="false" description="">
+                        <validator type="string" length="2000" condition="ltoreq"/>
+                    </field>
+                    <field name="HD11" position="11" mandatory="false" description="">
+                        <validator type="string" length="8" condition="fixed"/>
+                    </field>
+                    <field name="HD12" position="12" mandatory="false" description="">
+                        <validator type="string" length="11" condition="fixed"/>
+                    </field>
+                    <field name="HD13" position="13" mandatory="true" description="">
+                        <validator type="string" length="2000" condition="ltoreq"/>
+                    </field>
+                    <field name="HD14" position="14" mandatory="true" description="">
+                        <validator type="string" length="4" condition="fixed"/>
+                    </field>
+                    <field name="HD15" position="15" mandatory="false" description="">
+                        <validator type="string" length="1" condition="fixed"/>
+                    </field>
+                    <field name="HD16" position="16" mandatory="false" description="">
+                        <validator type="string" length="15" condition="ltoreq"/>
+                    </field>
+                    <field name="HD17" position="17" mandatory="false" description="">
+                        <validator type="date" length="10" condition="fixed"/>
+                    </field>
+                    <field name="HD18" position="18" mandatory="false" description="">
+                        <validator type="string" length="500" condition="ltoreq"/>
+                    </field>
+                    <field name="HD19" position="19" mandatory="false" description="">
+                        <validator type="string" length="12" condition="ltoreq"/>
+                    </field>
+                    <field name="HD20" position="20" mandatory="false" description="">
+                        <validator type="string" length="9" condition="ltoreq"/>
+                    </field>
+                    <field name="HD21" position="21" mandatory="false" description="">
+                        <validator type="string" length="1000" condition="ltoreq"/>
+                    </field>
+                    <field name="HD22" position="22" mandatory="false" description="">
+                        <validator type="string" length="20" condition="fixed"/>
+                    </field>
+                    <field name="HD23" position="23" mandatory="false" description="">
+                        <validator type="string" length="100" condition="ltoreq"/>
+                    </field>
+                    <field name="HD24" position="24" mandatory="false" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="HD25" position="25" mandatory="true" description="">
+                        <validator type="string" length="100" condition="ltoreq"/>
+                    </field>
+                    <field name="HD26" position="26" mandatory="true" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="HD27" position="27" mandatory="true" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="HD28" position="28" mandatory="false" description="">
+                        <validator type="date" length="10" condition="fixed"/>
+                    </field>
+                    <field name="HD29" position="29" mandatory="false" description="">
+                        <validator type="string" length="100" condition="ltoreq"/>
+                    </field>
+                    <field name="HD30" position="30" mandatory="false" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="HD31" position="31" mandatory="false" description="">
+                        <validator type="string" length="100" condition="ltoreq"/>
+                    </field>
+                    <field name="HD32" position="32" mandatory="false" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="HD33" position="33" mandatory="false" description="">
+                        <validator type="string" length="50" condition="ltoreq"/>
+                    </field>
+                    <field name="HD34" position="34" mandatory="false" description="">
+                        <validator type="date" length="10" condition="fixed"/>
+                    </field>
+                </fields>
+            </header>
+            <tables>
+                <table marker="PDLINE_N" mandatory="true" multiple="true" description="">
+                    <fields>
+                        <field name="U1" position="1" mandatory="true" description="">
+                            <validator type="integer" length="7" condition="ltoreq"/>
+                        </field>
+                        <field name="U2" position="2" mandatory="false" description="">
+                            <validator type="string" length="160" condition="ltoreq"/>
+                        </field>
+                        <field name="U3" position="3" mandatory="false" description="">
+                            <validator type="string" length="12" condition="ltoreq"/>
+                        </field>
+                        <field name="U4" position="4" mandatory="false" description="">
+                            <validator type="string" length="9" condition="ltoreq"/>
+                        </field>
+                        <field name="U5" position="5" mandatory="false" description="">
+                            <validator type="string" length="8" condition="fixed"/>
+                        </field>
+                        <field name="U6" position="6" mandatory="false" description="">
+                            <validator type="string" length="11" condition="fixed"/>
+                        </field>
+                        <field name="U7" position="7" mandatory="false" description="">
+                            <validator type="string" length="20" condition="fixed"/>
+                        </field>
+                        <field name="U8" position="8" mandatory="false" description="">
+                            <validator type="string" length="2" condition="fixed"/>
+                        </field>
+                        <field name="U9" position="9" mandatory="false" description="">
+                            <validator type="string" length="25" condition="ltoreq"/>
+                        </field>
+                        <field name="U10" position="10" mandatory="false" description="">
+                            <validator type="double" length="18.2" condition="ltoreq"/>
+                        </field>
+                        <field name="U11" position="11" mandatory="false" description="">
+                            <validator type="string" length="210" condition="ltoreq"/>
+                        </field>
+                        <field name="U12" position="12" mandatory="false" description="">
+                            <validator type="string" length="1" condition="fixed"/>
+                        </field>
+                    </fields>
+                </table>
+            </tables>
+        </data>
+    </document>
+</ps_spec>
